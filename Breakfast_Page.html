@@ -1,39 +1,102 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Breakfast</title>
-
-
-<link rel="stylesheet" type="text/css" href=".\hotel.css">
-	   <link rel="icon" type="image/x-icon" href="C:\Users\Deeksha\Desktop\New folder\img\icon.jpg">
-	    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.min.css">
-	     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-	       <meta charset="utf-8">
-	        <meta name="viewport" content="width=device-width, initial-scale=1">
-           	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+ <head>
+	  <title>Breakfast</title>
+   <link rel="stylesheet" type="text/css" href=".\hotel.css">
+	 <link rel="icon" type="image/x-icon" href="C:\Users\Deeksha\Desktop\New              folder\img\icon.jpg">
+	 <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.min.css">
+	 <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/                     animate.css/4.1.1/animate.min.css" />
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 	            
-              <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
    <style>
-   	.content {
-  position: absolute;
-  bottom:52px;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1;
-  width:70%;
-  padding: 50px;
-}
-   </style>
+   	 .content {
+       position: absolute;
+       bottom:52px;
+       background: rgb(0, 0, 0); /* Fallback color */
+       background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+       color: #f1f1f1;
+       width:70%;
+       padding: 50px;
+      }
 
+      .carousel-inner{
+                height: 80vh;
+
+            }
+
+           .navbar {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               cursor: pointer;
+               position: fixed;
+               width: 100%;
+               z-index: 10;
+            }
  
+           .background {
+              background: black;
+              background-blend-mode: darken;
+              background-size: cover;
+            }
+ 
+           .nav-list {
+              width: 70%;
+              display: flex;
+              align-items: center;
+            }
+ 
+           .nav-list li {
+             list-style: none;
+             padding: 10px 20px;
+            }
+ 
+            .nav-list li a {
+               text-decoration: none;
+               color: white;
+            }
+ 
+           .nav-list li a:hover {
+               color: grey;
+            }
+ 
+           .rightnav {
+              width: 30%;
+              text-align: right;
+             }
+ 
+            #search {
+               padding: 5px;
+               font-size: 17px;
+               border: 2px solid grey;
+               border-radius: 9px;
+            }
+   </style>
+ </head>
+ <body>
 
-</head>
-<body>
-<nav class="navbar navbar-expand-lg  position-fixed w-100" style="z-index:50; background:          transparent;">
+   <nav class="navbar background">
+         <ul class="nav-list">
+            
+             <li><a class="active" href="#HOME"><i class="fas fa-home"></i>&nbsp; &nbsp;HOME</a></li>
+             <li><a href="Rooms_Page.html">ROOM</a></li>
+             <li><a href="Breakfast_Page.html">BREAKFAST & DINING</a></li>
+             <li><a href="#SIGHTSEEING">SIGHTSEEING</a></li>
+             <li><a href="#LOCATION">LOCATION</a></li>
+             <li><a href="">ABOUT</a></li>
+           </ul>
+ 
+           <div class="rightNav">
+             <input type="text" name="search" id="search" placeholder="search...">
+             
+            </div>
+       </nav> 
+  <!--
+    <nav class="navbar navbar-expand-lg  position-fixed w-100" style="z-index:50; background: transparent;">
         <a class="navbar-brand" href="#"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
              <span class="navbar-toggler-icon"></span>
@@ -66,7 +129,7 @@
         </form>
    </div>
  </nav>
-
+!-->
 <div class="container">
  	<img src=".\img\img32.jpg" height="500px"; width="100%;">
  	<div class="content">
